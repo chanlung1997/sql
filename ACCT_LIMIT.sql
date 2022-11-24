@@ -18,7 +18,7 @@ FROM CTE_1
 CTE_3 AS (
 SELECT 
     *,
-    {{ validate_NoFutureDate('update_dte' }} 
+    {{ validate_NoFutureDate('update_dte') }} 
 FROM CTE_2
 ),
 
