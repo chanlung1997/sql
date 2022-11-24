@@ -41,7 +41,7 @@ CAST(Tot_Fee_Coll AS NUMERIC) AS Tot_Fee_Coll,
 CAST(Tot_Non_Fin_Cnt AS NUMERIC) AS Tot_Non_Fin_Cnt,
 CAST(Tot_Rel_Bal_Amt_Hke AS NUMERIC) AS Tot_Rel_Bal_Amt_Hke,
 CAST(Tot_Security_Trx_Amt AS NUMERIC) AS Tot_Security_Trx_Amt,
-CAST(Tot_Security_Trx_Cnt AS NUMERIC) AS Tot_Security_Trx_Cnt,
+CAST(Tot_Security_Trx_Cnt AS NUMERIC) AS Tot_Security_Trx_Cnt
 FROM CTE_2
 ),
 

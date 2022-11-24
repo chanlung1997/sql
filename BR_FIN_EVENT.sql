@@ -46,7 +46,7 @@ SELECT
     CAST(Trade_Certified_Code AS STRING) AS Trade_Certified_Code,
     CAST(Trade_Ind AS STRING) AS Trade_Ind,
     CAST(User_Id AS STRING) AS User_Id,
-    CAST(Val_Dte AS DATE) AS Val_Dte,
+    CAST(Val_Dte AS DATE) AS Val_Dte
 FROM CTE_1
 ),
 
