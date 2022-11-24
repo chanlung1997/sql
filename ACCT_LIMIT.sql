@@ -1,7 +1,7 @@
 WITH CTE_1 AS (
 SELECT 
     *
-FROM gcp-prj-dat-bigquery-env-00.bqd_015_raw.ACCT_CARD_raw
+FROM gcp-prj-dat-bigquery-env-00.bqd_015_raw.ACCT_LIMIT_raw
 ),
 
 CTE_2 AS (
