@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: EVENT_ACTV_TYPE
+    schema: bqd_995_marts
+    columns:
+    - name: Event_Actv_Type_Code
+      policy_tags:
+        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+    - name: Event_Actv_Type_Desc
+      policy_tags:
+        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'

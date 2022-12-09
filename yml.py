@@ -1,6 +1,6 @@
 import openpyxl as op 
 import yaml as yamly
-wb = op.load_workbook(r"C:\Users\Derek\OneDrive - sagetech.com.hk\Desktop\GIT\testing\CRM_Masking_List_v1.2 (002).xlsx")
+wb = op.load_workbook(r"C:\Users\Derek\OneDrive - sagetech.com.hk\Desktop\GIT\sql\CRM_Masking_List_v1.2 (002).xlsx")
 
 sheet = wb["CRM"]
 tableName = []
