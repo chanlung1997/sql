@@ -5,10 +5,10 @@ wb = op.load_workbook(r"C:\\Users\\Derek\\OneDrive - sagetech.com.hk\\Desktop\\G
 for sheet in wb:
     start_sen=[]
     
-    for i in range(2,sheet.max_row):
+    for i in range(2,sheet.max_row+1):
         d = sheet.cell(row=i, column=4).value
         g = sheet.cell(row=i, column=7).value
-        content=str(d)+" STRING "+"("+str(g)+")"+","
+        content=str(d)+" STRING"+"("+str(g)+")"+","
         start_sen.append(content)
     start = str("CREATE OR REPLACE TABLE `bqd_015_raw."+sheet.title+"_raw` (")
     start_sen.insert(0,start)
