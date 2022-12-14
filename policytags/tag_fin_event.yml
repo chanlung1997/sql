@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: fin_event
+  - name: tag_fin_event
     schema: bqd_995_marts
     columns:
     - name: Chq_Nbr

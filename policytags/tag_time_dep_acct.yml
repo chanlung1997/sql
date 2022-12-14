@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: time_dep_acct
+  - name: tag_time_dep_acct
     schema: bqd_995_marts
     columns:
     - name: Accrued_Int_Amt

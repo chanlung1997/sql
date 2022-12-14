@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_cr_card_appl
+  - name: tag_party_cr_card_appl
     schema: bqd_995_marts
     columns:
     - name: Appl_Nbr

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: indv_occup
+  - name: tag_indv_occup
     schema: bqd_995_marts
     columns:
     - name: Doc_Nbr

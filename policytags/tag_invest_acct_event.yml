@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: invest_acct_event
+  - name: tag_invest_acct_event
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

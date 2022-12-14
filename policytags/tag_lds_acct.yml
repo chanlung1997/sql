@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: lds_acct
+  - name: tag_lds_acct
     schema: bqd_995_marts
     columns:
     - name: Accrued_Int_Amt

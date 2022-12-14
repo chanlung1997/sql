@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_add
+  - name: tag_party_add
     schema: bqd_995_marts
     columns:
     - name: Add_Contact_Id

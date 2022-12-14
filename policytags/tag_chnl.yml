@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: chnl
+  - name: tag_chnl
     schema: bqd_995_marts
     columns:
     - name: Chnl_Desc

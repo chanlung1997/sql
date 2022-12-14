@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: other_chq_event
+  - name: tag_other_chq_event
     schema: bqd_995_marts
     columns:
     - name: Acct_Ccy_Code

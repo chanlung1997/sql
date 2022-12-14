@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_party_rel
+  - name: tag_party_party_rel
     schema: bqd_995_marts
     columns:
     - name: Create_By_Offr_Id

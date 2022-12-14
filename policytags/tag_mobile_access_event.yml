@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: mobile_access_event
+  - name: tag_mobile_access_event
     schema: bqd_995_marts
     columns:
     - name: Device_Brand

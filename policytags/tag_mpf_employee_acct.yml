@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: mpf_employee_acct
+  - name: tag_mpf_employee_acct
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: hire_purchase
+  - name: tag_hire_purchase
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

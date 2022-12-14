@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: sdb_event
+  - name: tag_sdb_event
     schema: bqd_995_marts
     columns:
     - name: Access_Time

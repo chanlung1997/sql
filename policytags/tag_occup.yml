@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: occup
+  - name: tag_occup
     schema: bqd_995_marts
     columns:
     - name: Occup_Code

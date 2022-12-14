@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: stock
+  - name: tag_stock
     schema: bqd_995_marts
     columns:
     - name: ccy_code

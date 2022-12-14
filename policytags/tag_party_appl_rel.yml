@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_appl_rel
+  - name: tag_party_appl_rel
     schema: bqd_995_marts
     columns:
     - name: Appl_Control_Fields

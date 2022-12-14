@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: bill_pmt_mrch
+  - name: tag_bill_pmt_mrch
     schema: bqd_995_marts
     columns:
     - name: Mrch_Categ

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: od_limit_range
+  - name: tag_od_limit_range
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

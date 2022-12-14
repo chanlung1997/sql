@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: irn_raq
+  - name: tag_irn_raq
     schema: bqd_995_marts
     columns:
     - name: Blind_Ind

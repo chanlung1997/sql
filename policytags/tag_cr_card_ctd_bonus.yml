@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: cr_card_ctd_bonus
+  - name: tag_cr_card_ctd_bonus
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

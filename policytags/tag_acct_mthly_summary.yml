@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: acct_mthly_summary
+  - name: tag_acct_mthly_summary
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: cr_card_mrch
+  - name: tag_cr_card_mrch
     schema: bqd_995_marts
     columns:
     - name: Add_Line_1

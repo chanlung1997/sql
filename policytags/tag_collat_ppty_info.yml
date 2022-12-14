@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: collat_ppty_info
+  - name: tag_collat_ppty_info
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

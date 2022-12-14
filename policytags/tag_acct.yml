@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: acct
+  - name: tag_acct
     schema: bqd_995_marts
     columns:
     - name: Acct_Categ_Code

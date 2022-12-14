@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: indv
+  - name: tag_indv
     schema: bqd_995_marts
     columns:
     - name: Acct_Under_S83_Ind

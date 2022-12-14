@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: card
+  - name: tag_card
     schema: bqd_995_marts
     columns:
     - name: Cancl_Dte

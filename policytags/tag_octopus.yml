@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: octopus
+  - name: tag_octopus
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

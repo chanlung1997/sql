@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: invest_event
+  - name: tag_invest_event
     schema: bqd_995_marts
     columns:
     - name: Ccy_Pair

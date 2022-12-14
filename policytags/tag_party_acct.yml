@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_acct
+  - name: tag_party_acct
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

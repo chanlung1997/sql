@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: marital_status
+  - name: tag_marital_status
     schema: bqd_995_marts
     columns:
     - name: Marital_Status

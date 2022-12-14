@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: insl_pmt_event
+  - name: tag_insl_pmt_event
     schema: bqd_995_marts
     columns:
     - name: Adj_Int_Amt

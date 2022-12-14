@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: ln_appl
+  - name: tag_ln_appl
     schema: bqd_995_marts
     columns:
     - name: Allow_Deviation_ATD_Ind

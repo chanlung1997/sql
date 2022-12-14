@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: country_code
+  - name: tag_country_code
     schema: bqd_995_marts
     columns:
     - name: Country_Code

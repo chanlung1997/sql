@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: org
+  - name: tag_org
     schema: bqd_995_marts
     columns:
     - name: Auth_Capital_Amt

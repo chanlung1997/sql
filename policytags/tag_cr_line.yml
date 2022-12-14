@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: cr_line
+  - name: tag_cr_line
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

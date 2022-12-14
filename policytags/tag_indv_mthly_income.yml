@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: indv_mthly_income
+  - name: tag_indv_mthly_income
     schema: bqd_995_marts
     columns:
     - name: Appl_Id

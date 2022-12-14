@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: cim_response_code
+  - name: tag_cim_response_code
     schema: bqd_995_marts
     columns:
     - name: Campaign_Class

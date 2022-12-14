@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: custodian_acct_portfolio
+  - name: tag_custodian_acct_portfolio
     schema: bqd_995_marts
     columns:
     - name: acct_nbr

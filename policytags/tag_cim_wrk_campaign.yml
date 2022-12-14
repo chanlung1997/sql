@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: cim_wrk_campaign
+  - name: tag_cim_wrk_campaign
     schema: bqd_995_marts
     columns:
     - name: Batch_Dte

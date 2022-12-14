@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: cr_card
+  - name: tag_cr_card
     schema: bqd_995_marts
     columns:
     - name: Actvn_Flag

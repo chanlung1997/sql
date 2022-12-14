@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: dep_acct
+  - name: tag_dep_acct
     schema: bqd_995_marts
     columns:
     - name: Acct_Br_Code

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: other_fx_event
+  - name: tag_other_fx_event
     schema: bqd_995_marts
     columns:
     - name: Applicant_Phone_Nbr

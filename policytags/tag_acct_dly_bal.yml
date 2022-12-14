@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: acct_dly_bal
+  - name: tag_acct_dly_bal
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

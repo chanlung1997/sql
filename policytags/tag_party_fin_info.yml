@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_fin_info
+  - name: tag_party_fin_info
     schema: bqd_995_marts
     columns:
     - name: Ccy_Code

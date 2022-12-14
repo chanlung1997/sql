@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: security_event
+  - name: tag_security_event
     schema: bqd_995_marts
     columns:
     - name: Commission_Amt

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_campaign_response
+  - name: tag_party_campaign_response
     schema: bqd_995_marts
     columns:
     - name: Create_By_Centre_Id

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: ln_ppsl_collat
+  - name: tag_ln_ppsl_collat
     schema: bqd_995_marts
     columns:
     - name: Appl_Control_Fields

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: mao_appl
+  - name: tag_mao_appl
     schema: bqd_995_marts
     columns:
     - name: Mobile_Phone_Country_Code

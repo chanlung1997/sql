@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: prod_subtype
+  - name: tag_prod_subtype
     schema: bqd_995_marts
     columns:
     - name: Prod_Subtype_Code

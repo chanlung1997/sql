@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party
+  - name: tag_party
     schema: bqd_995_marts
     columns:
     - name: Has_Mortgage_Ind

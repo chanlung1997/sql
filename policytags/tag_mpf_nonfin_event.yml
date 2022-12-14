@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: mpf_nonfin_event
+  - name: tag_mpf_nonfin_event
     schema: bqd_995_marts
     columns:
     - name: Cheque_Message_Code

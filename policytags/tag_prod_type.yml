@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: prod_type
+  - name: tag_prod_type
     schema: bqd_995_marts
     columns:
     - name: Prod_Type_Code

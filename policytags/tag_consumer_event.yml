@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: consumer_event
+  - name: tag_consumer_event
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

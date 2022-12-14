@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: bonus_pt_redemption
+  - name: tag_bonus_pt_redemption
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

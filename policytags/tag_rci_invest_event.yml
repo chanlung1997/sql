@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: rci_invest_event
+  - name: tag_rci_invest_event
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

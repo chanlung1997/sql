@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: cyber_banking_acct
+  - name: tag_cyber_banking_acct
     schema: bqd_995_marts
     columns:
     - name: Acct_Aggr_Fn_Enable_Ind

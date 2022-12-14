@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: acct_cr_risk
+  - name: tag_acct_cr_risk
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

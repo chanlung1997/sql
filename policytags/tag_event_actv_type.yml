@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: event_actv_type
+  - name: tag_event_actv_type
     schema: bqd_995_marts
     columns:
     - name: Event_Actv_Type_Code

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: ln_ppsl
+  - name: tag_ln_ppsl
     schema: bqd_995_marts
     columns:
     - name: Agent_Code

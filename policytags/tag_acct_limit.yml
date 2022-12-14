@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: acct_limit
+  - name: tag_acct_limit
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

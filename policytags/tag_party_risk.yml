@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_risk
+  - name: tag_party_risk
     schema: bqd_995_marts
     columns:
     - name: Acct_Risk_Lvl

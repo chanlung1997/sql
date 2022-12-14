@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: custodian_event
+  - name: tag_custodian_event
     schema: bqd_995_marts
     columns:
     - name: Accrued_Int_Amt

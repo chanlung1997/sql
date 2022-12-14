@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: ln_acct
+  - name: tag_ln_acct
     schema: bqd_995_marts
     columns:
     - name: Agency_Code

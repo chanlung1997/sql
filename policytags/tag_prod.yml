@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: prod
+  - name: tag_prod
     schema: bqd_995_marts
     columns:
     - name: Host_Prod_Id

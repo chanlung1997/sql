@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_optin_cust
+  - name: tag_party_optin_cust
     schema: bqd_995_marts
     columns:
     - name: Chnl_Type_Code

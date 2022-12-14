@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: cur_acct
+  - name: tag_cur_acct
     schema: bqd_995_marts
     columns:
     - name: Acct_Nbr

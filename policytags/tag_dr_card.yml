@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: dr_card
+  - name: tag_dr_card
     schema: bqd_995_marts
     columns:
     - name: Card_Delivery_Code

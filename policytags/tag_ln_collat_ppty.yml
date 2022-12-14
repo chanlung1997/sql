@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: ln_collat_ppty
+  - name: tag_ln_collat_ppty
     schema: bqd_995_marts
     columns:
     - name: Actual_Area_In_Sq_Ft

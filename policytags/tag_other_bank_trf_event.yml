@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: other_bank_trf_event
+  - name: tag_other_bank_trf_event
     schema: bqd_995_marts
     columns:
     - name: HKL_Message_Ind

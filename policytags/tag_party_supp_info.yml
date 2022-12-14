@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: party_supp_info
+  - name: tag_party_supp_info
     schema: bqd_995_marts
     columns:
     - name: BEA_Subsidiary_Ind

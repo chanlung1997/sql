@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: fps_event
+  - name: tag_fps_event
     schema: bqd_995_marts
     columns:
     - name: Bill_Nbr

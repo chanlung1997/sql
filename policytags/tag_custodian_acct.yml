@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: custodian_acct
+  - name: tag_custodian_acct
     schema: bqd_995_marts
     columns:
     - name: Acct_Code

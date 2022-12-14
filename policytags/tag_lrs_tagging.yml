@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: lrs_tagging
+  - name: tag_lrs_tagging
     schema: bqd_995_marts
     columns:
     - name: Curr_Page
