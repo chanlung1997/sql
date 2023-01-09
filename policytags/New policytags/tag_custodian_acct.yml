@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: tag_custodian_acct
+    schema: bqd_995_marts
+    config:
+      alias: CUSTODIAN_ACCT
+    columns:
+    - name: Acct_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Acct_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Appl_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Control_Fields
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Lending_Pct
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

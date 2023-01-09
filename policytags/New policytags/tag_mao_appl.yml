@@ -1,0 +1,412 @@
+version: 2
+models:
+  - name: tag_mao_appl
+    schema: bqd_995_marts
+    config:
+      alias: MAO_APPL
+    columns:
+    - name: Mobile_Phone_Country_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Mobile_Phone_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Exit_Page
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Acct_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Acct_Purpose
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Add_Proof_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: API_Appl_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: API_Time
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: API_TSP_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Appl_Status
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Appl_Type
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: ATM_Lang_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: China_Id_Proof_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Consent_Proof_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Corr_Add_Country_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Corr_Add_Line_1
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Corr_Add_Line_2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Corr_Add_Line_3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Corr_Add_Line_4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Corr_Add_Type
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: CSS_Acct_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: CSS_Advice_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: CTP_Proof_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Device_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Device_Model
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Device_OS_Ver
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Device_Platform
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: DK_Training_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: DK_WorkExp_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Doc_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_HIGHLY_SENSITIVE") }}'
+    - name: Doc_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: DP_TradingExp_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Elect_Add
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Employer_Consent_Declar
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Employer_Declar
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Employer_Name
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_HIGHLY_SENSITIVE") }}'
+    - name: Employment_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: FATCA_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q1
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q5
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q6
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q6_Remark
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q7
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Fin_Status_Q8
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: GPS_Enabled
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: GPS_Latitude
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: GPS_Location
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: GPS_Longitude
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: HKID_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: HK_Perm_Resident
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: HK_Tax_Resident
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Industry_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: IP_Addr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Issue_Country_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Job_Position
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Juris_Tax_Resident_1
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Juris_Tax_Resident_2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Juris_Tax_Resident_3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Juris_Tax_Resident_4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Juris_Tax_Resident_5
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: LDS_Acct_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Multi_Nationality
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Nationality
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Occup_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Optout_3rd_Party_Gain
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Optout_Call
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Optout_DM
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Optout_Email
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Optout_SI
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Optout_SMS
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Other_Tax_Resident
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Party_Chinese_Name
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_HIGHLY_SENSITIVE") }}'
+    - name: Party_Name
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_HIGHLY_SENSITIVE") }}'
+    - name: PBK_Ref
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Prefer_CN_Br_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Prefer_HK_Br_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Prod_Type
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Referral_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Referrer_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Ref_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Reject_Desc
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Residential_Add_Line_1
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Residential_Add_Line_2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Residential_Add_Line_3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Residential_Add_Line_4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Session_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Session_Time
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Signature_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Stmt_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: API_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Submit_Time
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Create_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Supp_Doc_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Supp_Doc_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Supp_Issue_Country_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: TIN
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_5
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Declar_1
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Declar_2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Declar_3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Declar_4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Declar_5
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Not_Provide_Reason_Code_1
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Not_Provide_Reason_Code_2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Not_Provide_Reason_Code_3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Not_Provide_Reason_Code_4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Not_Provide_Reason_Code_5
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Unable_Obtain_Reason_Remark_1
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Unable_Obtain_Reason_Remark_2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Unable_Obtain_Reason_Remark_3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Unable_Obtain_Reason_Remark_4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: TIN_Unable_Obtain_Reason_Remark_5
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Title_Desc
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q1
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q2
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q3
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q4
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q5
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q6
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q7
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q8
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Vul_Cust_Q9
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Doc_Expiry_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Dte_Of_Birth
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Session_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Submit_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Supp_Doc_Expiry_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Residential_Phone_Country_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Residential_Phone_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'

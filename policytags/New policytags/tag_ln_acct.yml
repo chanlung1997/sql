@@ -1,0 +1,187 @@
+version: 2
+models:
+  - name: tag_ln_acct
+    schema: bqd_995_marts
+    config:
+      alias: LN_ACCT
+    columns:
+    - name: Agency_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Acct_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Accum_Waived_Od_Int
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Appl_Appl_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Appl_Control_Fields
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Appl_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Appl_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Appl_Ppsl_Seq_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Bk_Return_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Control_Fields
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Debt_Status
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Facility_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Gov_Guarantee_Pct
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Impair_Ln_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Insl_Freq_Nbr_Unit
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Insl_Freq_Unit_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Base_Rate
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Rate_Adj_Pct
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Rate_Base_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Rate_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Rate_Loading
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Rate_Mode
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Rate_Tot
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Rate_Type
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Ln_Introducer_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Ln_Seq_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Ln_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Ln_Use_Country
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Od_Fixed_Int_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Od_Grace_Period
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Od_Int_Adj_Pct
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Od_Int_Amt
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Od_Int_Rate
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Od_Prin_Amt
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Od_Rate_Chng_Opt
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Od_Rate_Type
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Orig_Ln_Amt
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: OS_Od_Int_Amt
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Os_Prin_Amt
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Int_Start_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Last_Rate_Chng_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Prod_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Project_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Promote_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Purpose_Of_Fin_HKMA
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Last_Settle_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Rate_Chng_Opt
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Repmt_Method_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Repmt_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Reprice_Option
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Solicitor_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Tenor
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Written_Off_Amt
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Maturity_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Next_Pmt_Due_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Pmt_Due_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Ppsl_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Rate_Chng_Eff_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Written_Off_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Mortgage_Plan_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

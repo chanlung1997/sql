@@ -1,0 +1,49 @@
+version: 2
+models:
+  - name: tag_bonus_pt_redemption
+    schema: bqd_995_marts
+    config:
+      alias: BONUS_PT_REDEMPTION
+    columns:
+    - name: Acct_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Amount_Used
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Appl_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Control_Fields
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Merchandise_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Merchandise_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Order_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Points_Used
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Redeem_Conf_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Redeem_Conf_Ind
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Redeem_Method_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Redeem_Qnty
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Redemption_Dte
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Seq_Nbr
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'

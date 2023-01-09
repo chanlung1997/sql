@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: tag_bill_pmt_mrch
+    schema: bqd_995_marts
+    config:
+      alias: BILL_PMT_MRCH
+    columns:
+    - name: Mrch_Categ
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Mrch_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Mrch_Name
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

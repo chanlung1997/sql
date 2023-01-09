@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: tag_prod_subtype
+    schema: bqd_995_marts
+    config:
+      alias: PROD_SUBTYPE
+    columns:
+    - name: Prod_Subtype_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Prod_Subtype_Desc
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Prod_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

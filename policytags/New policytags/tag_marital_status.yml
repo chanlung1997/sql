@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: tag_marital_status
+    schema: bqd_995_marts
+    config:
+      alias: MARITAL_STATUS
+    columns:
+    - name: Marital_Status
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
+    - name: Marital_Status_Desc
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
