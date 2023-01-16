@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: tag_prod_categ
+    schema: bqd_995_marts
+    columns:
+    - name: Prod_Categ_Code
+      policy_tags:
+        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+    - name: Prod_Categ_Desc
+      policy_tags:
+        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+    - name: Prod_Subtype_Code
+      policy_tags:
+        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
