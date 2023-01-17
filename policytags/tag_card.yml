@@ -2,49 +2,51 @@ version: 2
 models:
   - name: tag_card
     schema: bqd_995_marts
+    config:
+      alias: CARD
     columns:
     - name: Cancl_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Card_Categ_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Card_Issue_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Card_Nbr
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Card_Network
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Card_Seq_Nbr
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Card_Status_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Card_Type_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Chip_Card_Ind
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Dr_Card_Function
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Eff_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Expiry_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: First_Issue_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Lang_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Upgrade_Ind
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

@@ -2,79 +2,81 @@ version: 2
 models:
   - name: tag_lds_acct
     schema: bqd_995_marts
+    config:
+      alias: LDS_ACCT
     columns:
     - name: Accrued_Int_Amt
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Accrued_Int_Amt_Hke
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Acct_Nbr
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Alternate_Ccy_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Appl_Id
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Collateral_Ind
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Control_Fields
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Coupon_Rate
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Intl_dep_nbr
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Intl_Int_Rate
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Linked_Type_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Maturity_Amt
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Nbr_Of_Days
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Nbr_Of_Share
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Periodic_Ind
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Profit_Amt
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Result_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Stock_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Determine_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Type_Ref_Nbr
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Maturity_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Mstr_Agreement_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Next_Coupon_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Settle_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Trade_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: tag_education
+    schema: bqd_995_marts
+    config:
+      alias: EDUCATION
+    columns:
+    - name: Education_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Education_Desc
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

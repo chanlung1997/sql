@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: tag_host_appl
+    schema: bqd_995_marts
+    config:
+      alias: HOST_APPL
+    columns:
+    - name: Appl_Desc
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Appl_Id
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

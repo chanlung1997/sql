@@ -2,37 +2,39 @@ version: 2
 models:
   - name: tag_sdb_event
     schema: bqd_995_marts
+    config:
+      alias: SDB_EVENT
     columns:
     - name: Access_Time
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Dest_Acct_Nbr
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Dest_Appl_Id
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Dest_Control_Fields
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Event_Id
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Function_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Pmt_Method_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Rental_Amt
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Security_Forfeited
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Security_Recd
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Access_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

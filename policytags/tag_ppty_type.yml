@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: tag_ppty_type
+    schema: bqd_995_marts
+    config:
+      alias: PPTY_TYPE
+    columns:
+    - name: Ppty_Type_Code
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
+    - name: Ppty_Type_Desc
+      policy_tags:
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

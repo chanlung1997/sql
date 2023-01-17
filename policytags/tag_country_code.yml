@@ -2,25 +2,27 @@ version: 2
 models:
   - name: tag_country_code
     schema: bqd_995_marts
+    config:
+      alias: COUNTRY_CODE
     columns:
     - name: Country_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitve", var("DEFAULT_PT_Sensitve")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Country_Name
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Country_Risk_Ind
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: CRS_Report_Ind
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Entity_Nbr
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Region_Code
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Special_Risk_Ind
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

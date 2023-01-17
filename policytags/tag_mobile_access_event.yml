@@ -2,31 +2,33 @@ version: 2
 models:
   - name: tag_mobile_access_event
     schema: bqd_995_marts
+    config:
+      alias: MOBILE_ACCESS_EVENT
     columns:
     - name: Device_Brand
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitive", var("DEFAULT_PT_Sensitive")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Device_Id
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Device_Model
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Device_OS_Ver
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Device_Platform
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Event_Id
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: Event_Time
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'
     - name: IP_Addr
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Sensitve", var("DEFAULT_PT_Sensitve")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_SENSITIVE") }}'
     - name: Event_Dte
       policy_tags:
-        - '{{ env_var("PT_TAXONOMY", var("DEFAULT_PT_TAXONOMY")) ~ env_var("PT_Internal", var("DEFAULT_PT_Internal")) }}'
+        - '{{ var("DEFAULT_PT_TAXONOMY") ~ var("DEFAULT_PT_INTERNAL") }}'

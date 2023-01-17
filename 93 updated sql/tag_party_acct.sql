@@ -28,7 +28,7 @@ FROM  CTE_1
 CTE_3  AS  ( 
 	SELECT   
 	*,
-	{{validate_HKID('Doc_Nbr')}},
+	{{validate_HKID('Doc_Type_Code','Doc_Nbr')}},
 	{{validate_DocTypeCode('Doc_Type_Code')}},
 	{{validate_CountryCode('Issue_Country_Code')}},
 	{{validate_NoFutureDate('Acct_Party_End_Dte')}},

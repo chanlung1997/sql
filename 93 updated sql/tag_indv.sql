@@ -41,14 +41,14 @@ FROM  CTE_1
 CTE_3  AS  ( 
 	SELECT   
 	*,
-	{{validate_HKID('Doc_Nbr')}},
+	{{validate_HKID('Doc_Type_Code','Doc_Nbr')}},
 	{{validate_DocTypeCode('Doc_Type_Code')}},
 	{{validate_CountryCode('Issue_Country_Code')}},
 	{{validate_NoFutureDate('Dte_Of_Birth')}},
 	{{validate_GenderCode('Gender_Code')}},
 	{{validate_CountryCode('Home_Country_Code')}},
 	{{validate_MaritalStatus('Marital_Status')}},
-	{{validate_TitleCode('Title_Code')}}
+	{{validate_TitleCode('Gender_Code','Title_Code')}}
 FROM  CTE_2 
 ),   
  
